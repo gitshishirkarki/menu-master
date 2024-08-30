@@ -1,0 +1,27 @@
+{
+  "bsonType": "object",
+  "title": "MenuItem",
+  "required": ["name", "price", "restaurantId"],
+  "properties": {
+    "name": {
+      "bsonType": "string",
+      "description": "Name of the menu item"
+    },
+    "description": {
+      "bsonType": "string",
+      "description": "Description of the menu item"
+    },
+    "price": {
+      "bsonType": "number",
+      "description": "Price of the menu item, must be non-negative"
+    },
+    "restaurantId": {
+      "bsonType": "objectId",
+      "description": "Reference to the User who owns this menu item"
+    },
+    "qrCodeUrl": {
+      "bsonType": "string",
+      "description": "URL of the generated QR code for the menu item"
+    }
+  }
+}

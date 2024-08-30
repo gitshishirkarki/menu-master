@@ -1,0 +1,26 @@
+{
+  "bsonType": "object",
+  "title": "User",
+  "required": ["username", "password", "restaurantName"],
+  "properties": {
+    "username": {
+      "bsonType": "string",
+      "description": "Unique identifier for the restaurant owner"
+    },
+    "password": {
+      "bsonType": "string",
+      "description": "Hashed password for authentication"
+    },
+    "restaurantName": {
+      "bsonType": "string",
+      "description": "Name of the restaurant"
+    },
+    "menuItems": {
+      "bsonType": "array",
+      "items": {
+        "bsonType": "objectId"
+      },
+      "description": "Array of references to MenuItem documents"
+    }
+  }
+}
